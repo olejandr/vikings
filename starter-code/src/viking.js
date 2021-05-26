@@ -23,17 +23,24 @@ class Viking extends Soldier{
     }
     receiveDamage(damage){
         this.health -=  damage;
-        if(this.health = 0){
-            return `${this.name} has died in act of combat`
-        }else{
-            return `${this.name} has received ${this.damage} points of damage`
-        }
+        
+        
+        
     }
     battleCry(){
         return "Odin Owns You All!";
     }
 
 }
+
+// Viking.receiveDamage = function(damage){
+//     this.health -=  damage;
+//       if(this.health = 0){
+//           return this.name + ' has died in act of combat'
+//       }else{
+//           return `${this.name} has received ${this.damage} points of damage`
+//       }
+// }
 
 // Saxon
 class Saxon {}
